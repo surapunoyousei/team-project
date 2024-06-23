@@ -1,14 +1,14 @@
 h1 {
+    font-size: 150px;
+    text-align: center;
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-
-}
-@keyframes slidein {
+  }
+  
+  @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 200%;
+      width: 300%;
     }
   
     to {
@@ -19,8 +19,29 @@ h1 {
 
 
 
+  h2 {
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: slidein;
+    margin-top: 40px;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
 li {
-display: inline-block;
+    display: inline-block;
+    text-align: center;
 }
 
 .G {
