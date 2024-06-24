@@ -1,21 +1,58 @@
 h1 {
-    font-size: 150px;
-    text-align: center;
-    animation-duration: 3s;
-    animation-name: slidein;
+  font-size: 100px;
+  margin-top: 0px;
+}
+
+
+  * {
+    -webkit-transition-property: all;
+    -webkit-transition-duration: .2s;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+    -moz-transition-property: all;
+    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
   }
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  body{
+    background:white;
+    padding:75px;
+    text-align:center;
+    font-family: 'Oswald', sans-serif;
   }
+  
+  
+  .btn{
+    color:white;
+    background:black;
+    padding:20px 20px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+  }
+  
+  .btn:hover{
+    border:none;
+    background: white;
+    background:#fff;
+    padding:20px 20px; #000;
+    color:#1b1b1b;
+  }
+  
+  .footer{
+    font-size:8px;
+    color:#fff;
+    clear:both;
+    display:block;
+    letter-spacing:5px;
+    border:10px solid #fff;
+    padding:5px;
+    text-decoration:underline;
+    width:210px;
+    margin:auto;
+    margin-top:100px;
+  }
+
+
+
 
 
 
@@ -23,7 +60,8 @@ h1 {
     text-align: center;
     animation-duration: 5s;
     animation-name: slidein;
-    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-top: 100px;
   }
   
   @keyframes slidein {
@@ -37,12 +75,6 @@ h1 {
       width: 100%;
     }
   }
-
-
-li {
-    display: inline-block;
-    text-align: center;
-}
 
 .G {
 color: blue;
@@ -67,3 +99,7 @@ color: green;
 .e {
 color: red;
 }
+
+
+
+
