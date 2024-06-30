@@ -20,6 +20,7 @@ h1 {
     font-family: 'Oswald', sans-serif;
   }
   
+  /* メニューバーアニメーション-------------------------------------------- */
   
   .btn{
     color:white;
@@ -38,22 +39,10 @@ h1 {
     color:#1b1b1b;
   }
   
-  .footer{
-    font-size:8px;
-    color:#fff;
-    clear:both;
-    display:block;
-    letter-spacing:5px;
-    border:10px solid #fff;
-    padding:5px;
-    text-decoration:none;
-    width:210px;
-    margin:auto;
-    margin-top:100px;
-  }
+  
 
 
-
+/* --------------------------Googleの使命は、、、のアニメーション------------------------------ */
 
 
   h2 {
@@ -81,7 +70,7 @@ h1 {
 
 
 
-
+/* でかいGoogle文字------------------------------------------------------------------------- */
 
 .G {
 color: blue;
@@ -108,9 +97,7 @@ color: red;
 }
 
 
-
-
-
+/* ページトップに戻るボタン-------------------------------------------------- */
 
 
 html {
@@ -140,6 +127,8 @@ html {
 }
 
 
+/* ------------------------------------------------------- */
+
 .syoukai {
   font-size: 30px;
 }
@@ -147,6 +136,9 @@ html {
 li#1 {
   margin: 10px 10px 10px 10px;
 }
+
+
+/* 固定ヘッダー-------------------------------------------- */
 
 header {
   position: fixed;
@@ -177,7 +169,7 @@ header .nav .menu li {
 header .nav .menu li a{
  color: black;
  font-weight:bold;
- text-decoration: none;
+ text-decoration: underline;
 }
 
 main {
@@ -185,7 +177,7 @@ main {
 }
 
 footer {
-  background: #CCC; 
+  background: #ccc; 
   padding:1em;
   margin-top:100px;
 }
@@ -201,52 +193,6 @@ footer p {
 }
 
 
-
-
-
-
-
-.readmore {
-  position: relative;
-  margin: 50px auto 0;
-  padding: 0 0 75px;
-}
-
-.readmore label {
-  position: absolute;
-  display: table;
-  left: 50%;
-  bottom: 0;
-  margin: 0 auto;
-  width: 200px;
-  padding: 10px 0;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  background-color: #333;
-  transform: translateX(-50%);
-  cursor: pointer;
-  z-index: 1;
-}
-
-.readmore label::before{
-  content: '続きを見る';
-}
-
-.readmore input[type="checkbox"]:checked ~ label::before {
-  content: '元に戻す';
-}
-
-.readmore input[type="checkbox"]{
-  display: none;
-}
-
-.readmore-content {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.readmore input[type="checkbox"]:checked ~ .readmore-content {
-  height: auto;
+li#1 {
+margin: 10px 10px 10px 10px;
 }
