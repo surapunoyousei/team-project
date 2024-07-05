@@ -22,6 +22,9 @@
     color: red;
 }
 
+.ser{
+    color: #FFFFFF
+}
 /*クローム*/
 .cp_box *, .cp_box *:before, .cp_box *:after {
 	-webkit-box-sizing: border-box;
@@ -85,7 +88,7 @@
 
 
 
-/*Gmail*/
+/*Youtube*/
 
 .cp_box1 *, .cp_box1 *:before, .cp_box1 *:after {
     -webkit-box-sizing: border-box;
@@ -135,7 +138,7 @@
 }
 
 
-/*ドライブ*/
+/*その他*/
 .cp_box2 *, .cp_box2 *:before, .cp_box2 *:after {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -199,3 +202,12 @@ p.Yo{
     color: #ffcc33;
     position: absolute; top : 600px; left: 580px;
 }
+
+
+h1{
+    padding: 10px;
+    background-color: #000000;
+    border: solid 5px #000000;
+}
+
+
