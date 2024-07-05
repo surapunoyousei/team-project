@@ -5,6 +5,7 @@ h1 {
 
 
 
+
   * {
     -webkit-transition-property: all;
     -webkit-transition-duration: .2s;
@@ -14,7 +15,7 @@ h1 {
   }
   
   body{
-    background:white;
+    background:#618bad;
     padding:75px;
     text-align:center;
     font-family: 'Oswald', sans-serif;
@@ -22,7 +23,21 @@ h1 {
   
   /* メニューバーアニメーション-------------------------------------------- */
   
-
+  .btn{
+    color:white;
+    background:black;
+    padding:20px 20px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:none;
+  }
+  
+  .btn:hover{
+    border:none;
+    background: white;
+    padding:20px 20px; ;
+    color:black;
+  }
 
 /* --------------------------Googleの使命は、、、のアニメーション------------------------------ */
 
@@ -126,7 +141,7 @@ header {
   position: fixed;
   width: 100%; 
   height: 60px; 
-  background: #ccc; 
+  background: #6699cc; 
   padding: 20px 60px; 
   box-sizing: border-box;
   top: 0; 
@@ -174,3 +189,24 @@ footer p {
   font-weight:bold;
 }
 
+
+
+
+a.link {
+  margin-top: 1em;
+  color: black;
+}
+
+h2.link1 {
+  margin-top: 300px;
+}
+
+
+
+
+
+
+
+#link2 {
+  color: black;
+}
