@@ -1,66 +1,78 @@
 h1 {
-  font-size: 150px;
+  font-size: 200px;
   margin-top: 0px;
+  margin-bottom: 100px;
 }
 
 
 
 
-  * {
-    -webkit-transition-property: all;
-    -webkit-transition-duration: .2s;
-    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
-    -moz-transition-property: all;
-    -moz-transition-timing-function: cubic-bezier(100,50,21,6);
-  }
+body{
+  background-color:#468966;
+  padding:75px;
+  text-align:center;
+  font-family: 'Oswald', sans-serif;
+}
   
-  body{
-    background-color: #618bad;
-    padding:75px;
-    text-align:center;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  /* メニューバーアニメーション-------------------------------------------- */
-  
-  .btn{
-    color:white;
-    background:black;
-    padding:20px 20px;
-    text-decoration:none;
-    letter-spacing:2px;
-    text-transform:none;
-  }
-  
-  .btn:hover{
-    border:none;
-    background: white;
-    padding:20px 20px; ;
-    color:black;
-  }
-
-/* --------------------------Googleの使命は、、、のアニメーション------------------------------ */
 
 
-  h2 {
-    text-align: center;
-    animation-duration: 5s;
-    animation-name: slidein;
-    margin-bottom: 100px;
-    margin-top: 100px;
-  }
+
+/* メニューバーアニメーション-------------------------------------------- */
   
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
+.btn{
+  color:white;
+  background:black;
+  padding:20px 20px;
+  text-decoration:underline;
+  letter-spacing:2px;
+  text-transform:none;
+}
   
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
+.btn:hover{
+  border:none;
+  background: #cee6ce;
+  padding:20px 20px; ;
+  color:black;
+}
+
+
+a#home:hover{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+a#about:hover{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+a#service:hover{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+a#active:hover{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.menuber {
+  margin-top: 0px;
+}
+
+
+* {
+  -webkit-transition-property: all;
+  -webkit-transition-duration: .2s;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100,50,21,6);
+}
 
 
 
@@ -94,119 +106,20 @@ color: red;
 }
 
 
-/* ページトップに戻るボタン-------------------------------------------------- */
-
-
-html {
-  scroll-behavior: smooth;
-}
-.pagetop {
-  height: 50px;
-  width: 50px;
-  position: fixed;  
-  right: 30px;
-  bottom: 30px;
-  background: #fff;
-  border: solid 2px #000;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-}
-
-.pagetop__arrow {
-  height: 10px;
-  width: 10px;
-  border-top: 3px solid #000;
-  border-right: 3px solid #000;
-  transform: translateY(20%) rotate(-45deg);
-}
-
-
-/* ------------------------------------------------------- */
-
-.syoukai {
-  font-size: 30px;
-}
-
-li#1 {
-  margin: 10px 10px 10px 10px;
-}
-
-
-/* 固定ヘッダー-------------------------------------------- */
-
-header {
-  position: fixed;
-  width: 100%; 
-  height: 60px; 
-  background: #6699cc; 
-  padding: 20px 60px; 
-  box-sizing: border-box;
-  top: 0; 
-  left: 0; 
-  display: flex; 
-  align-items: center; 
-
- /* ロゴとメニューを横並びにする */
-  display: flex; 
-  justify-content:space-between;
-}
-
-header .nav .menu {
-  display: flex; 
-}
-
-header .nav .menu li {
-  list-style: none; 
-  margin-left: 15px;
-}
-
-header .nav .menu li a{
- color: black;
- font-weight:bold;
- text-decoration: underline;
-}
-
-main {
-  text-align:center;
-}
-
-footer {
-  background: #ccc; 
-  padding:1em;
-  margin-top:100px;
-}
-
-footer p {
-  font-size: .8em;
+.google {
   color: #fff;
-  max-width: 800px;
-  padding: 0;
-  text-align:center;
-  margin:0 auto;
-  font-weight:bold;
-}
-
-
-
-
-a.link {
-  margin-top: 1em;
-  color: black;
-}
-
-h2.link1 {
-  margin-top: 300px;
-}
-
-
-
-
-
-
-
-#link2 {
-  color: black;
+  font-size: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0px;
+  text-shadow:
+  0 1px #bbb,
+  0 2px #aaa,
+  0 3px #999,
+  0 4px #888,
+  0 5px #777,
+  0 6px #666,
+  0 7px #555,
+  0 8px #444,
+  0 9px #333,
+  0 32px 24px rgba(0,0,0,0.7);
 }

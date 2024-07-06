@@ -1,3 +1,201 @@
 body {
-    background:#618bad
+    background:#468966;
+}
+
+/* 固定ヘッダー-------------------------------------------- */
+
+header {
+    position: fixed;
+    width: 100%; 
+    height: 60px; 
+    background: #cee6ce; 
+    padding: 20px 60px; 
+    box-sizing: border-box;
+    top: 0; 
+    left: 0; 
+    display: flex; 
+    align-items: center; 
+   /* ロゴとメニューを横並びにする */
+    display: flex; 
+    justify-content:space-between;
+}
+
+header .nav .menu {
+    display: flex; 
+}
+
+header .nav .menu li {
+    list-style: none; 
+    margin-left: 15px;
+}
+
+header .nav .menu li a{
+    color: black;
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+main {
+    text-align:center;
+}
+
+footer {
+    background: #ccc; 
+    padding:1em;
+    margin-top:100px;
+}
+
+footer p {
+    font-size: .8em;
+    color: #fff;
+    max-width: 800px;
+    padding: 0;
+    text-align:center;
+    margin:0 auto;
+    font-weight:bold;
+}
+
+.title-text {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* bgAnimeの後の奴は、明るくなり始めてからアニメーションが消えるまでの秒数で、linearの後は明るくなり始めるまでの秒数 */
+
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: #468966;
+    animation: bgAnime 3s linear 5s forwards;
+	position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.text {
+    text-align: start;
+    font-size: 2vw;
+    color: black;
+    height: 1.2em;
+    line-height: 1.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 17;
+    width: 45ch;	/*文字の長さ*/
+	border-right: 5px solid #468966;	/*点滅バー*/
+	overflow: unset;	/*必須*/
+	white-space: nowrap;	/*必須*/
+	line-height:1.4;
+	font-weight:700;
+	animation: typing 3s steps(60), blink .5s step-end infinite alternate;	/*アニメーション関連*/
+    display: inline-block;
+}
+
+.text:after{
+    content: "";
+    width: 100vw;
+    height: 1.2em;
+    background: #468966;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    animation: textAnime1 5s linear forwards;
+}
+
+@keyframes textAnime1 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    }
+    
+
+
+
+
+@keyframes bgAnime {
+        0%{
+            opacity: 1;
+        }
+        99%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 0;
+            visibility: hidden;
+        }
+        }
+
+
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+}
+@keyframes blink {
+	50% {
+		border-color: transparent;		/*点滅風に見せる*/
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.animated-text {
+    /* 初期状態で画面の外に配置 */
+    position: relative;
+    right: -100%;
+    /* アニメーションの設定 */
+    animation: slide-in 2s forwards;
+}
+/* 異なる遅延時間を設定 */
+.animated-text:nth-child(1) {
+    animation-delay: 10s;
+}
+.animated-text:nth-child(2) {
+    animation-delay: 10.5s;
+}
+.animated-text:nth-child(3) {
+    animation-delay: 11s;
+}
+.animated-text:nth-child(4) {
+    animation-delay: 11.5s;
+}
+.animated-text:nth-child(5) {
+    animation-delay: 12s;
+}
+
+/* キーフレームアニメーションの定義 */
+@keyframes slide-in {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
 }

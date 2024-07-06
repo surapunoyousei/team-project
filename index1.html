@@ -3,53 +3,40 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .animated-text {
-            /* 初期状態で画面の外に配置 */
-            position: relative;
-            right: -100%;
-            /* アニメーションの設定 */
-            animation: slide-in 2s forwards;
-        }
-        /* 異なる遅延時間を設定 */
-        .animated-text:nth-child(1) {
-            animation-delay: 0s;
-        }
-        .animated-text:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-        .animated-text:nth-child(3) {
-            animation-delay: 1s;
-        }
-        .animated-text:nth-child(4) {
-            animation-delay: 1.5s;
-        }
-        .animated-text:nth-child(5) {
-            animation-delay: 2s;
-        }
-
-        /* キーフレームアニメーションの定義 */
-        @keyframes slide-in {
-            0% {
-                right: -100%;
-            }
-            100% {
-                right: 0;
-            }
-        }
-    </style>
+        <style>
+            
+        </style>
         <title>チームでウェブ構築</title>
         <link rel="stylesheet" href="index1.css">
     </head>
+
+    <header>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="index1.html">Googleについて</a></li>
+                <li><a href="index2.html">Googleのサービス</a></li>
+                <li><a href="index3.html">Googleの取り組み</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
     <body>
-        <h1><span class="title-text">
+        <div class = 'bg'>
+            <p class="text">Googleの使命は、世界中の情報を整理し、世界中の人がアクセスできて使えるようにする。</p>
+        </div>
+
+        <div class = 'title-text'>
+            <h1>
             <span class="G">G</span>
             <span class="o">o</span>
             <span class="o2">o</span>
             <span class="g">g</span>
             <span class="l">l</span>
-            <span class="e">e</span>
-            について</span></h1>
+            <span class="e">e</span>について
+            </h1>
+        </div>
         <p><strong><span class="emphasized-text">googleの主な歴史</span></strong></p>
         
         <ul>
