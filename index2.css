@@ -1,137 +1,120 @@
-
-
-
-
 /* bgAnimeの後の奴は、明るくなり始めてからアニメーションが消えるまでの秒数で、linearの後は明るくなり始めるまでの秒数 */
-
-
+/* オープニング */
 .bg {
-    width: 100vw;
-    height: 100vh;
-    background: #468966;
-    animation: bgAnime 1s linear 3s forwards;
+	width: 100vw;
+	height: 100vh;
+	background: #468966;
+	animation: bgAnime 1s linear 3s forwards;
 	position: absolute;
-    top: 0;
-    left: 0;
+	top: 0;
+	left: 0;
+	z-index: 100;
 }
-
 .text {
-    text-align: center;
-    font-size: 3vw;
-    color: black;
-    height: 1.2em;
-    line-height: 1.2;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    z-index: 7;
-    width: 38ch;	/*文字の長さ*/
-	border-right: 5px solid #468966;	/*点滅バー*/
-	overflow: hidden;	/*必須*/
-	white-space: nowrap;	/*必須*/
-	line-height:1.4;
-	font-weight:700;
-	animation: typing 3s steps(60), blink .60s step-end infinite alternate;	/*アニメーション関連*/
+	text-align: center;
+	font-size: 2vw;
+	color: black;
+	height: 1.2em;
+	line-height: 1.2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	z-index: 7;
+	width: 38ch; /*文字の長さ*/
+	border-right: 5px solid #468966; /*点滅バー*/
+	overflow: hidden; /*必須*/
+	white-space: nowrap; /*必須*/
+	line-height: 1.4;
+	font-weight: 700;
+	animation: typing 3s steps(60), blink 0.6s step-end infinite alternate; /*アニメーション関連*/
 }
 
-.text:after{
-    content: "";
-    width: 80vw;
-    height: 1.2em;
-    background: #cee6ce;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    z-index: 100;
-    animation: textAnime1 3s linear forwards;
+.text:after {
+	content: "";
+	width: 80vw;
+	height: 1.2em;
+	background: #cee6ce;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	z-index: 100;
+	animation: textAnime1 3s linear forwards;
 }
 
 @keyframes textAnime1 {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-    }
-    
-
-
-
+	0% {
+	transform: translateX(0);
+	}
+	100% {
+	transform: translateX(100%);
+	}
+}
 
 @keyframes bgAnime {
-        0%{
-            opacity: 1;
-        }
-        99%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 0;
-            visibility: hidden;
-        }
-        }
-
-
+	0% {
+	opacity: 1;
+	}
+	99% {
+	opacity: 0;
+	}
+	100% {
+	opacity: 0;
+	visibility: hidden;
+	}
+}
 
 @keyframes typing {
 	from {
-		width: 0;
+	width: 0;
 	}
 }
 @keyframes blink {
 	50% {
-		border-color: transparent;		/*点滅風に見せる*/
+	border-color: transparent; /*点滅風に見せる*/
 	}
 }
 
 
 
-
-
-
-
-
-
-
-
-
+/* googleの文字を変える */
 
 .G {
-    color: blue;
+	color: blue;
 }
-    
+
 .o {
-    color: red;
+	color: red;
 }
 
 .o2 {
-    color: #ffcc33;
+	color: #ffcc33;
 }
-    
+
 .g {
-    color: blue;
+	color: blue;
 }
-    
+
 .l {
-    color: green;
+	color: green;
 }
 
 .e {
-    color: red;
+	color: red;
 }
 
-.ser{
-    color: #FFFFFF
+.ser {
+	color: #ffffff;
 }
 /*クローム*/
-.cp_box *, .cp_box *:before, .cp_box *:after {
+  .cp_box *,
+  .cp_box *:before,
+  .cp_box *:after {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -143,10 +126,12 @@
 
 .cp_box label {
 	font-weight: bold;
-	position: absolute; top : 200px; left: 100px;
+	position: absolute;
+	top: 200px;
+	left: 100px;
 	display: block;
 	width: 15%;
-    margin: 0.3em 0; 
+	margin: 0.3em 0;
 	padding: 0.3em 1em;
 	cursor: pointer;
 	transition: all 0.3s;
@@ -158,7 +143,7 @@
 
 .cp_box label:hover {
 	transition: all 0.3s;
-	color: #FFFFFF;
+	color: #ffffff;
 	background: blue;
 }
 
@@ -167,84 +152,85 @@
 }
 
 .cp_box .cp_container {
-	position: absolute; top : 300px; left: 20px;
+	position: absolute;
+	top: 300px;
+	left: 20px;
 	z-index: 10;
 	overflow: hidden;
 	height: 0;
 	margin-top: -1px;
-	transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 	background: rgba(255, 255, 255, 0.5);
 }
 
 .cp_box input:checked ~ div {
-	transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 }
 
-/* 続きを読むを押すと表示されるテキストの高さ */
+  /* 続きを読むを押すと表示されるテキストの高さ */
 .cp_box input:checked ~ div.cp_container {
 	height: 300px;
 }
 
-
-
-
-
-
-
-
-
 /*Youtube*/
 
-.cp_box1 *, .cp_box1 *:before, .cp_box1 *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  .cp_box1 *,
+  .cp_box1 *:before,
+  .cp_box1 *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .cp_box1 {
-    width: auto;
-    margin: 2em auto;
+	width: auto;
+	margin: 2em auto;
 }
 .cp_box1 label {
-    font-weight: bold;
-    position: absolute; top : 205px; left: 530px;
-    display: block;
-    width: 15%;
-    margin: auto;
-    padding: 0.3em 1em;
-    cursor: pointer;
-    transition: all 0.3s;
-    text-align: center;
-    color: #DA3C41;
-    border: 2px solid #DA3C41;
-    border-radius: 3px;
+	font-weight: bold;
+	position: absolute;
+	top: 205px;
+	left: 530px;
+	display: block;
+	width: 15%;
+	margin: auto;
+	padding: 0.3em 1em;
+	cursor: pointer;
+	transition: all 0.3s;
+	text-align: center;
+	color: #da3c41;
+	border: 2px solid #da3c41;
+	border-radius: 3px;
 }
 .cp_box1 label:hover {
-    transition: all 0.3s;
-    color: #FFFFFF;
-    background: #DA3C41;
+	transition: all 0.3s;
+	color: #ffffff;
+	background: #da3c41;
 }
 .cp_box1 input {
-    display: none;
+	display: none;
 }
 .cp_box1 .cp_container1 {
-    position: absolute; top : 300px; left: 470px;
-    z-index: 10;
-    overflow: hidden;
-    height: 0;
-    margin-top: -1px;
-    transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
-    background: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top: 300px;
+	left: 470px;
+	z-index: 10;
+	overflow: hidden;
+	height: 0;
+	margin-top: -1px;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+	background: rgba(255, 255, 255, 0.5);
 }
 .cp_box1 input:checked ~ div {
-    transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 }
-/* 続きを読むを押すと表示されるテキストの高さ */
+  /* 続きを読むを押すと表示されるテキストの高さ */
 .cp_box1 input:checked ~ div.cp_container1 {
-    height: 300px;
+	height: 300px;
 }
-
 
 /*その他*/
-.cp_box2 *, .cp_box2 *:before, .cp_box2 *:after {
+  .cp_box2 *,
+  .cp_box2 *:before,
+  .cp_box2 *:after {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -252,14 +238,17 @@
 .cp_box2 {
 	width: auto;
 	margin: 2em auto;
+	z-index: 10;
 }
 
 .cp_box2 label {
 	font-weight: bold;
-	position: absolute; top : 200px; left: 980px;
+	position: absolute;
+	top: 200px;
+	left: 980px;
 	display: block;
 	width: 15%;
-    margin: 0.3em 0; 
+	margin: 0.3em 0;
 	padding: 0.3em 1em;
 	cursor: pointer;
 	transition: all 0.3s;
@@ -271,7 +260,7 @@
 
 .cp_box2 label:hover {
 	transition: all 0.3s;
-	color: #FFFFFF;
+	color: #ffffff;
 	background: #ffcc33;
 }
 
@@ -280,45 +269,48 @@
 }
 
 .cp_box2 .cp_container2 {
-	position: absolute; top : 300px; left: 920px;
+	position: absolute;
+	top: 300px;
+	left: 920px;
 	z-index: 10;
 	overflow: hidden;
 	height: 0;
 	margin-top: -1px;
-	transition: height 0.3s ease-in-out,box-shadow 0.6s linear;
+	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 	background: rgba(255, 255, 255, 0.5);
 }
 
 .cp_box2 input:checked ~ div {
-	transition: height 0.5s ease-in-out,box-shadow 0.1s linear;
+	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 }
 
-/* 続きを読むを押すと表示されるテキストの高さ */
+  /* 続きを読むを押すと表示されるテキストの高さ */
 .cp_box2 input:checked ~ div.cp_container2 {
 	height: 300px;
 }
 
-p.Ch{
-    color: #ffcc33;
-    position: absolute; top : 600px; left: 60px;
+p.Ch {
+	color: #ffcc33;
+	position: absolute;
+	top: 600px;
+	left: 60px;
 }
 
-p.Yo{
-    color: #ffcc33;
-    position: absolute; top : 600px; left: 580px;
+p.Yo {
+	color: #ffcc33;
+	position: absolute;
+	top: 600px;
+	left: 580px;
 }
 
-
-h1{
-    padding: 10px;
-    background-color: #000000;
-    border: solid 5px #000000;
+h1 {
+	padding: 10px;
+	background-color: #000000;
+	border: solid 5px #000000;
 }
-
-
 
 body {
-	background:#468966;
+	background: #468966;
 }
 
 .google {
@@ -330,58 +322,55 @@ body {
 	text-align: center;
 }
 
-
-/* 固定ヘッダー-------------------------------------------- */
+  /* 固定ヘッダー-------------------------------------------- */
 
 header {
 	position: fixed;
-	width: 100%; 
-	height: 60px; 
-	background: #cee6ce; 
-	padding: 20px 60px; 
+	width: 100%;
+	height: 60px;
+	background: #cee6ce;
+	padding: 20px 60px;
 	box-sizing: border-box;
-	top: 0; 
-	left: 0; 
-	display: flex; 
-	align-items: center; 
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
 
-   /* ロゴとメニューを横並びにする */
-	display: flex; 
-	justify-content:space-between;
-}
-
+	/* ロゴとメニューを横並びにする */
+	display: flex;
+	justify-content: space-between;
+} 
 header .nav .menu {
-	display: flex; 
+	display: flex;
 }
 
 header .nav .menu li {
-	list-style: none; 
+	list-style: none;
 	margin-left: 15px;
 }
 
-header .nav .menu li a{
+header .nav .menu li a {
 	color: black;
-	font-weight:bold;
+	font-weight: bold;
 	text-decoration: underline;
 }
 
 main {
-	text-align:center;
+	text-align: center;
 }
 
 footer {
-	background: #ccc; 
-	padding:1em;
-	margin-top:100px;
+	background: #ccc;
+	padding: 1em;
+	margin-top: 100px;
 }
 
 footer p {
-	font-size: .8em;
+	font-size: 0.8em;
 	color: #fff;
 	max-width: 800px;
 	padding: 0;
-	text-align:center;
-	margin:0 auto;
-	font-weight:bold;
+	text-align: center;
+	margin: 0 auto;
+	font-weight: bold;
 }
-
