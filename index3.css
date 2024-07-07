@@ -139,7 +139,7 @@ h1 {
     width: 100vw;
     height: 100vh;
     background: #468966;
-    animation: bgAnime 1s linear 3s forwards;
+    animation: bgAnime 0.8s linear 2.5s forwards;
 	position: absolute;
     top: 0;
     left: 0;
@@ -220,3 +220,7 @@ h1 {
 		border-color: transparent;		/*点滅風に見せる*/
 	}
 }
+
+
+
+
