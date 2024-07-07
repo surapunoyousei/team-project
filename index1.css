@@ -1,4 +1,5 @@
 body {
+  overflow: hidden;
   background: #468966;
   height: 100vh;
   width: 100vw;
@@ -24,7 +25,6 @@ header {
 header .nav .menu {
   display: flex;
 }
-
 header .nav .menu li {
   list-style: none;
   margin-left: 15px;

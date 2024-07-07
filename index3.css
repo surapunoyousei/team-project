@@ -29,7 +29,7 @@ body {background:#468966;
     h1 {
         font-size: 150px;
         margin-top: 0px;
-      }
+    }
 
 /* 固定ヘッダー-------------------------------------------- */
 
@@ -147,7 +147,7 @@ h1 {
 
 .text {
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vw;
     color: black;
     height: 1.2em;
     line-height: 1.2;
